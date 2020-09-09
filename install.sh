@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# install more packages
+apt-get -y update \
+    && apt-get -y install dnsutils wget
+
 # install openvpn
 apt-get install -y openvpn iptables
 #apt-get install -y iputils-ping traceroute
@@ -29,7 +33,7 @@ apt-get -y install privoxy \
     && rm -rf /etc/privoxy/*
 
 # Clean up
-apt-get autoremove \
-    && apt-get auto-clean \
-    && apt-get clean \
-    && rm -fr /tmp/* /var/tmp/*
+apt-get -y autoremove \
+    && apt-get -y auto-clean \
+    && apt-get -y clean \
+    && rm -fr /tmp/* /var/tmp/* /var/lib/apt/lists/*

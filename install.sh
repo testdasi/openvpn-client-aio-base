@@ -34,6 +34,6 @@ apt-get -y install privoxy \
 
 # Clean up
 apt-get -y autoremove \
-    && apt-get -y auto-clean \
+    && apt-get -y autoclean \
     && apt-get -y clean \
     && rm -fr /tmp/* /var/tmp/* /var/lib/apt/lists/*

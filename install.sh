@@ -5,8 +5,8 @@ apt-get -y update \
     && apt-get -y install dnsutils wget sipcalc
 
 # install openvpn
-apt-get install -y openvpn iptables
-#apt-get install -y iputils-ping traceroute
+apt-get install -y openvpn nftables
+#apt-get install -y iptables iputils-ping traceroute
 
 # install stubby and clean config
 apt-get -y install stubby \

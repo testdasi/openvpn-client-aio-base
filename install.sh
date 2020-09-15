@@ -22,16 +22,6 @@ apt-get -y install tinyproxy \
     && mkdir -p /etc/tinyproxy \
     && rm -rf /etc/tinyproxy/*
 
-# install torsocks
-apt-get -y install torsocks \
-    && mkdir -p /etc/tor \
-    && rm -rf /etc/tor/*
-
-# install privoxy
-apt-get -y install privoxy \
-    && mkdir -p /etc/privoxy \
-    && rm -rf /etc/privoxy/*
-
 # Clean up
 apt-get -y autoremove \
     && apt-get -y autoclean \

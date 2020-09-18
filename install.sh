@@ -2,7 +2,7 @@
 
 # install more packages
 apt-get -y update \
-    && apt-get -y install dnsutils wget sipcalc curl
+    && apt-get -y install dnsutils wget sipcalc curl unzip
 
 # install openvpn
 apt-get install -y openvpn
